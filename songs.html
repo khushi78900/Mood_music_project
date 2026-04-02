@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<h2>Recommended Songs</h2>
+<ul>
+{% for song in songs %}
+    <li>{{ song[1] }}</li>
+{% endfor %}
+</ul>

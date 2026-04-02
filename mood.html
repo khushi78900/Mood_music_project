@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<form action="/songs" method="post">
+    <h2>Select Mood</h2>
+    <select name="mood">
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="chill">Chill</option>
+    </select>
+    <button>Get Songs</button>
+</form>
